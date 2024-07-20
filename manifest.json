@@ -1,12 +1,17 @@
 {
-	"name": "Simple PWA",
-	"short_name": "Simple PWA",
+	"name": "Cartographers exploration",
+	"short_name": "Cartographers exploration",
 	"display": "standalone",
 	"start_url": "./?utm_source=pwa_install",
 	"scope": ".",
 	"theme_color": "#000",
 	"background_color": "#000",
 	"icons":[
+        {
+            "src": "favicon-16x16.png",
+            "sizes": "16x16",
+            "type": "image/png"
+        },
         {
             "src": "favicon-32x32.png",
             "sizes": "32x32",
