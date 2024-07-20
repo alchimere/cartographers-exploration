@@ -7,7 +7,7 @@ self.addEventListener("install", event => {
 	event.waitUntil(
 		caches.open(cacheName).then(cache => {
 			return cache.addAll([
-				"/",
+				".",
 				"favicon.ico", // Favicon, IE and fallback for other browsers
 				"favicon-16x16.png", // Favicon, default
 				"favicon-32x32.png", // Favicon, Safari on Mac OS
