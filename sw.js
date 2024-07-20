@@ -11,6 +11,7 @@ self.addEventListener("install", event => {
 				"favicon.ico", // Favicon, IE and fallback for other browsers
 				"favicon-16x16.png", // Favicon, default
 				"favicon-32x32.png", // Favicon, Safari on Mac OS
+				"favicon-144x144.png", // Favicon, Safari on Mac OS
 				"index.html", // Main HTML file
 				"logo.png", // Logo
 				"main.js", // Main Javascript file
