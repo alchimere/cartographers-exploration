@@ -1,4 +1,4 @@
-const cacheName = "cache5"; // Change value to force update
+const cacheName = "cache6"; // Change value to force update
 
 self.addEventListener("install", event => {
 	// Kick out the old service worker
@@ -45,10 +45,11 @@ self.addEventListener("fetch", event => {
 	event.respondWith(
 		caches.open(cacheName).then(cache => {
 			return cache.match(event.request).then(response => {
-				response = null;
-				return response || fetch(event.request).then(networkResponse => {
+				return fetch(event.request).then(networkResponse => {
 					cache.put(event.request, networkResponse.clone());
 					return networkResponse;
+				}).catch(reason => {
+					return response;
 				});
 			})
 		})
