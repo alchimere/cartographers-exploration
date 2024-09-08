@@ -44,13 +44,14 @@ function nextCard() {
     if (tiles == previousTiles) {
         return nextCard();
     }
-
+    
     displayTiles(tiles);
 }
 
 function displayTiles(tiles) {
     tilesArea.innerHTML = "";
     tiles.forEach(tile => {
+        alert(tile);
         tilesArea.innerHTML += '<div><img src="'+tile+'"/></div>';
     });
 }
