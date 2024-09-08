@@ -58,7 +58,7 @@ section#card {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: calc(100vh - 2cm);
+    height: calc(100vh - 2cm - 2mm);
     border-radius: 0.5cm;
 
     display: flex;
@@ -138,14 +138,14 @@ section#card-content > div {
     justify-content: center;
 }
 .card-cell img {
-    height: 50%;
+    height: 40%;
 }
 
 #card-cell-cases > div {
     min-width: 50%
 }
 #card-cell-cases img[src*=coin] {
-    height: 30%;
+    height: 25%;
 }
 
 section#bottom-menu {
