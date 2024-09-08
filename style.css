@@ -6,6 +6,7 @@ body {
 div.container {
     margin: auto;
     max-width: calc(0.67*100vh);
+    max-height: calc(1.5*100vw);
     display: flex;
     flex-direction: column;
     gap: 1mm;
@@ -116,6 +117,11 @@ section#card-content > div {
     min-height: 50%;
 }
 
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
 .card-cell {
     flex-grow: 1;
     text-align: center;
@@ -131,11 +137,8 @@ section#card-content > div {
     flex-grow: 1;
     text-align: center;
     justify-content: center;
-}
-.card-cell > div {
-    display: flex;
     align-items: center;
-    justify-content: center;
+    animation: fadeIn 1s ease-in-out;
 }
 .card-cell img {
     height: 40%;
