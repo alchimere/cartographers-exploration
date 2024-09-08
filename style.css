@@ -1,0 +1,17 @@
+div.container {
+    flex-direction: column;
+}
+
+div.top-menu {
+    height: 0.5cm;
+    background-color: black;
+}
+
+div.card {
+    height: calc(100vh - 1cm);
+    border-radius: 0.5cm
+}
+
+div.bottom-menu {
+    height: 0.5cm;
+}
