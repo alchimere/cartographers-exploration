@@ -1,19 +1,18 @@
 body {
-    margin: 0
+    margin: 0;
+    background-color: black;
 }
 
 div.container {
-    background-color: yellow;
     margin: auto;
     max-width: calc(0.67*100vh);
     display: flex;
     flex-direction: column;
-    gap: 1mm;;
+    gap: 1mm;
 }
 
 section#top-menu {
     height: 1cm;
-    background-color: gray;
 
     display: flex;
     align-items: center;
@@ -23,6 +22,7 @@ section#top-menu {
 #season {
     background-color: none;
     z-index: 1000;
+    display: none;
     
     width: 3cm;
     height: 4cm;
@@ -36,7 +36,7 @@ section#top-menu {
 
 section#top-menu .menu-btn {
     background-color: aqua;
-    min-width: 0.4cm;
+    min-width: 0.8cm;
     height: 0.8cm;
     border-radius: 0.4cm;
     padding-left: 0.2cm;
@@ -58,7 +58,7 @@ section#card {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: calc(100vh - 2cm - 2mm);
+    height: calc(100vh - 1cm - 1mm);
     border-radius: 0.5cm;
 
     display: flex;
