@@ -14,6 +14,7 @@ div.container {
 
 section#top-menu {
     height: 1cm;
+    color: white;
 
     display: flex;
     align-items: center;
@@ -90,10 +91,24 @@ section#card .top-logo {
     margin: 0.5cm;
 }
 
-section#card-title {
-    display: none;
-    background-color: white;
-    text-align: center;
+section#next-card {
+    display: flex;
+    height: 2cm;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 0.5cm;
+    padding-right: 0.5cm;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+section#next-card img {
+    height: 2cm;
+}
+
+#btn-prev-card {
+    transform: rotate(180deg);
+    opacity: 0.5;
 }
 
 section#card-content {
@@ -144,10 +159,10 @@ section#card-content > div {
     height: 40%;
 }
 
-#card-cell-cases > div {
+#card-cell-shapes > div {
     min-width: 50%
 }
-#card-cell-cases img[src*=coin] {
+#card-cell-shapes img[src*=coin] {
     height: 25%;
 }
 
