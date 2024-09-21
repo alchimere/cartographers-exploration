@@ -3,6 +3,7 @@ const btnNextCard = document.getElementById('btn-next-card');
 const btnPrevCard = document.getElementById('btn-prev-card');
 const tilesArea = document.getElementById('card-cell-fields');
 const shapesArea = document.getElementById('card-cell-shapes');
+const cardBack = document.getElementById('card');
 const cardTime = document.getElementById('card-time');
 const cardCounter = document.getElementById('card-counter');
 
@@ -112,7 +113,7 @@ function displayCard() {
     const card = deck.cards[curPos];
     
     cardTime.innerHTML = card.time;
-    // TODO display ruin
+    displayRuins(card.ruins);
     displayTiles(card.tiles);
     displayShapes(card.shapes);
     updateCardCounter(deck, curPos);
@@ -194,7 +195,7 @@ function generateDeck(options) { // TODO options to randomize tiles and shapes a
     deck.cards.sort(randomCompare);
     // Mark 2 random cards as ruin
     for (let i = 0; i < 2; i++) {
-        deck.cards.ruin = true;
+        deck.cards[i].ruins = true;
     }
     deck.cards.sort(randomCompare);
 
@@ -214,6 +215,12 @@ function prevCard() {
     
     setCurPos(curPos - 1);
     displayCard();
+}
+
+function displayRuins(ruins) {
+    cardBack.className = "";
+    if (ruins)
+        cardBack.className = "ruins";
 }
 
 function displayTiles(tiles) {

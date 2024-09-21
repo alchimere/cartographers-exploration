@@ -37,7 +37,7 @@ section#top-menu {
 }
 
 section#top-menu .menu-btn {
-    background-color: aqua;
+    background-color: rgb(227, 227, 227);
     min-width: 0.8cm;
     height: 0.8cm;
     border-radius: 0.4cm;
@@ -68,6 +68,10 @@ section#card {
     justify-content: space-between;
 }
 
+section#card.ruins {
+    background-image: url('img/explore_back_ruins.jpg');
+}
+
 section#card-top {
     display: flex;
     flex-direction: row;
@@ -75,14 +79,14 @@ section#card-top {
 }
 
 section#card .top-logo {
-    background-color: aqua;
+    background-color: #61625a;
+    box-shadow: black 0px 0px 10px 4px;
     width: 1cm;
     height: 1cm;
     border-radius: 50%;
 
-    border-width: 1px;
-    border-style: solid;
-    border-width: 1px;
+    color: whitesmoke;
+    font-weight: bold;
 
     display: flex;
     justify-content: center;
