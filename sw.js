@@ -1,4 +1,4 @@
-const cacheName = "v0.2.0"; // Change value to force update
+const cacheName = "v0.2.1"; // Change value to force update
 
 self.addEventListener("install", event => {
 	// Kick out the old service worker
@@ -17,6 +17,34 @@ self.addEventListener("install", event => {
 				"main.js", // Main Javascript file
 				"manifest.json", // Manifest file
 				"style.css", // Main CSS file
+
+				"img/coin.png",
+				"img/explore_back.jpg",
+				"img/explore_back_ruins.jpg",
+				"img/next.svg",
+				"img/ruin.png",
+				
+				"img/farm.png",
+				"img/forest.png",
+				"img/lake.png",
+				"img/monster.png",
+				"img/village.png",
+
+				"img/shape1.png",
+				"img/shape2Diag.png",
+				"img/shape2I.png",
+				"img/shape3I.png",
+				"img/shape3V.png",
+				"img/shape4I.png",
+				"img/shape4L.png",
+				"img/shape4T.png",
+				"img/shape4Z.png",
+				"img/shape5Plus.png",
+				"img/shape5Rect.png",
+				"img/shape5T.png",
+				"img/shape5V.png",
+				"img/shape5W.png",
+				"img/shape5Z.png"
 			]);
 		})
 	);
